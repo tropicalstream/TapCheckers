@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Glow behind the king -->
+    <path android:pathData="M54,54 m-32,0 a32,32 0 1,0 64,0 a32,32 0 1,0 -64,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="54" android:centerY="52" android:gradientRadius="36">
+                <item android:offset="0.0" android:color="#55FFD24A" />
+                <item android:offset="1.0" android:color="#00FFD24A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Lower stacked disc (dark) -->
+    <path android:fillColor="#FF2A3247" android:pathData="M54,74 m-26,0 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0" />
+    <path android:strokeColor="#FF6E7C96" android:strokeWidth="2" android:fillColor="#00000000"
+        android:pathData="M54,74 m-17,0 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0" />
+
+    <!-- Upper disc (light) -->
+    <path android:pathData="M54,50 m-26,0 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="46" android:centerY="42" android:gradientRadius="34">
+                <item android:offset="0.0" android:color="#FFF4F7FC" />
+                <item android:offset="1.0" android:color="#FFC7D0E0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#FF9AA8C0" android:strokeWidth="2" android:fillColor="#00000000"
+        android:pathData="M54,50 m-17,0 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0" />
+
+    <!-- Gold crown marking the king -->
+    <path android:fillColor="#FFFFD24A" android:strokeColor="#FF7A5A00" android:strokeWidth="1.5"
+        android:pathData="M42,58 L42,42 L49,50 L54,40 L59,50 L66,42 L66,58 Z" />
+</vector>
